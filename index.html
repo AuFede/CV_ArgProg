@@ -1,93 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Link de iconos -->
-    <link rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
 
     <!-- Link de CSS -->
-    <link rel="stylesheet" type="text/css" href="css/estilos.css">
-    
+    <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+
     <title>CV</title>
-</head>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="l-header" id="header">
+      <nav class="nav bd-container">
+        <a href="#" class="nav__logo">Sang-Hyeok</a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">
+                <i class="bx bxs-home-smile nav__icon"></i>Portal
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#profile" class="nav__link">
+                <i class="bx bx-user nav__icon"></i>Perfil
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#education" class="nav__link">
+                <i class="bx bx-book-open nav__icon"></i>Educación
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">
+                <i class="bx bx-receipt nav__icon"></i>Habilidades
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#experience" class="nav__link">
+                <i class="bx bx-briefcase nav__icon"></i>Experiencia
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#certificates" class="nav__link">
+                <i class="bx bx-award nav__icon"></i>Certificaciones
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#references" class="nav__link">
+                <i class="bx bx-link-external nav__icon"></i>Referencias
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-grid-alt"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main class="l-main bd-container">
+      <!-- Todos los elementos dentro de este div, se generan en PDF -->
+      <div class="resume">
+        <div class="resume__left">
+          <!-- Home -->
+          <section class="home" id="home">
+            <div class="home__container section bd-grid">
+                <div class="home__data bd-grid">
+                    <img src="img/img_1.jpg" alt="Foto Retrato" class="home__img">
+
+                    <h1 class="home__title">Sang-Hyeok <b>Lee</b></h1>
+                    <h3 class="home__profession">Gamer & Desarrollador Web</h3>
+
+                    <!-- Botón para descargar el CV guardado en la carpeta PDF. Disponible para Desktop-->
+                    <div>
+                        <a download= "" href="pdf/CV_download.pdf" class="home__button-movil">Descarga</a>
+                    </div>
+                    
+                    <div class="home__address bd-grid">
+                        <span class="home__information">
+                            <i class='bx bx-map home__icon'></i> Wall St. 11, NY 10005, Nueva York.
+                        </span>
+                        <span class="home__information">
+                            <i class='bx bx-envelope home__icon'></i> Faker@gmail.com
+                        </span>
+                        <span class="home__information">
+                            <i class='bx bx-phone home__icon'></i> (555) 555-1234
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+          </section>
 
 
-<body>
-<!-- HEADER -->
-<header class="l-header" id="header">
-    <nav class="nav bd-container">
-       <a href="#" class="nav__logo">Sang-Hyeok</a>
-       <div class="nav__menu" id="nav-menu">
+          <!-- Botón para cambiar el tema -->
 
-        <ul class="nav__list">
+          <!-- Botón para generar y descargar el PDF. Disponible para Desktop -->
 
-           <li class="nav__item">
-            <a href="#home" class="nav__link active-link">
-                <i class='bx bxs-home-smile nav__icon'></i>Portal
-            </a>
-           </li> 
+          <!-- Social -->
 
-           <li class="nav__item">
-            <a href="#profile" class="nav__link">
-                <i class='bx bx-user nav__icon'></i>Perfil
-            </a>
-           </li> 
+          <!-- Profile -->
 
-           <li class="nav__item">
-            <a href="#education" class="nav__link">
-                <i class='bx bx-book-open nav__icon'></i>Educación
-            </a>
-           </li> 
+          <!-- Education -->
 
-           <li class="nav__item">
-            <a href="#skills" class="nav__link">
-                <i class='bx bx-receipt nav__icon'></i>Habilidades
-            </a>
-           </li> 
+          <!-- Skills -->
+        </div>
 
-           <li class="nav__item">
-            <a href="#experience" class="nav__link">
-                <i class='bx bx-briefcase nav__icon'></i>Experiencia
-            </a>
-           </li> 
+        <div class="resume__right">
+            <!-- Experience -->
+      
+            <!-- Certificates -->
+      
+            <!-- References -->
+      
+            <!-- Languages -->
+      
+            <!-- Interests -->
+        </div>
+      </div>
 
-           <li class="nav__item">
-            <a href="#certificates" class="nav__link">
-                <i class='bx bx-award nav__icon'></i>Certificaciones
-            </a>
-           </li> 
+    </main>
 
-           <li class="nav__item">
-            <a href="#references" class="nav__link">
-                <i class='bx bx-link-external nav__icon'></i>Referencias
-            </a>
-           </li> 
+    <!-- Scrollear hacia arriba -->
 
-        </ul>
-       </div>
+    <!-- HTML2PDF -->
+    <script src=""></script>
 
-
-       <div class="nav__toggle" id="nav-toggle">
-            <i class='bx bx-grid-alt'></i>
-       </div>
-    </nav>
-</header>
-
-<main class="l-main bd-container">
-
-</main>
-
-<!-- Scrollear hacia arriba -->
-
-<!-- HTML2PDF -->
-<script src=""></script>
-
- <!-- Script de JS    -->
-<script src="js/main.js"></script>
-</body>
-
+    <!-- Script de JS    -->
+    <script src="js/main.js"></script>
+  </body>
 </html>
