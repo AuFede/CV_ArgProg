@@ -55,6 +55,34 @@ function scrollTop(){
 window.addEventListener('scroll', scrollTop)
 
 // Modo Oscuro
+const themeButton = document.getElementById('theme-button')
+const darkTheme = 'dark-theme'
+const iconTheme = 'bx-sun'
+
+// Tema previamente seleccionado (if user selected)
+const selectedTheme = localStorage.getItem('selected-theme')
+const selectedIcon = localStorage.getItem('selected-icon')
+
+// Obtenemos el tema actual que la interfaz tiene a través de la validación de la clase de modo oscuro.
+const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
+const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'bx-moon' : 'bx-sun'
+
+// Validamos si el usuario previamente elige un tema.
+if (selectedTheme) {
+  // Si la validación está completa, preguntamos cuál fue el problema para saber si activamos o desactivamos el modo oscuro.
+  document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
+  themeButton.classList[selectedIcon === 'bx-moon' ? 'add' : 'remove'](iconTheme)
+}
+
+// Activamos / desactivamos el tema manualmente con el botón.
+themeButton.addEventListener('click', () => {
+    // Agregar o remover el ícono / oscuro.
+    document.body.classList.toggle(darkTheme)
+    themeButton.classList.toggle(iconTheme)
+    // Guardamos el tema y el ícono actual que el usuario haya elegido.
+    localStorage.setItem('selected-theme', getCurrentTheme())
+    localStorage.setItem('selected-icon', getCurrentIcon())
+})
 
 // Reducción de tamaño
 
