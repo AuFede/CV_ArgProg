@@ -45,3 +45,22 @@ function scrollActive(){
     })
 }
 window.addEventListener('scroll', scrollActive)
+
+// Scrollear hacia arriba
+function scrollTop(){
+  const scrollTop = document.getElementById('scroll-top');
+  // Cuando el scroll es mas alto que 560 la altura del viewport, suma la clase show-scroll al tag a con la clase scroll-top.
+  if(this.scrollY >= 200) scrollTop.classList.add('show-scroll'); else scrollTop.classList.remove('show-scroll')
+}
+window.addEventListener('scroll', scrollTop)
+
+// Modo Oscuro
+
+// Reducción de tamaño
+
+// Cambiar el tamaño cuando el CV este descargado
+
+// Generar PDF
+// Area de PDF generado
+
+// Html2pdf options
