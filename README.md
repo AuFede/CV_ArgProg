@@ -65,8 +65,8 @@ Proyecto de Curriculum Vitae (CV)
 <p>El objetivo del proyecto es crear un CV que sea mobile responsive, para entregar en plataforma TICMAS. Deadline: 01/02/2023</p>
 <p>Objetivos potenciales: menú en la versión mobile, botón para scrollear hacia arriba, modo oscuro y generador de PDF para la versión Desktop.</p>
 <p>Algunos elementos para agregar: Uso de lorem ipsum, crear un perfil de usuario random, utilizar íconos.</p>
-<p>Plataformas para completar el proyecto:<strong>https://boxicons.com/</strong>,
-<strong>https://fonts.google.com/</strong>, <strong>https://github.com/</strong> y <strong>Thttps://www.youtube.com/</strong></p>
+<p>Plataformas para completar el proyecto: <strong>https://boxicons.com/</strong>,
+<strong>https://fonts.google.com/</strong>, <strong>https://github.com/</strong> y <strong>https://www.youtube.com/</strong></p>
 
 -----------------------------------------------------
 ### Etapas:
